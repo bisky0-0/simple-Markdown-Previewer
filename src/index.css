@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#editor-container, #previewer-container{
+    width: 50%;
+    height: 100%;
+    background-color: #1e1e1e;
+    padding: 10px;
+}
+
+#editor-heading, #previewer-heading{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 20px;
+    outline: solid #81b4eb;
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+
+#previewer{
+    width: 100%;
+    height: calc(100% - 50px);
+    background-color: #fff;
+    padding: 10px 40px;
+    overflow-y: scroll;
+    font-size: larger;
+}
+
+p code{
+    background: #c1dfff;
+}
+
+#previewer > *{
+    margin-top: 30px;
+}
+
+#previewer h1, h2, h3{
+    border-bottom: 1px solid #000;
+}
+
+#previewer> p > img {
+    display: block;
+    max-width: 90%;
+    margin: 2rem auto;
+}
+
+#previewer pre {
+    display: block;
+    overflow: auto;
+    background:#c1dfff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+#previewer blockquote {
+    border-left: 3px solid #224b4b;
+    color: #224b4b;
+    padding-left: 5px;
+    margin-left: 25px;
+}
+
+#previewer td, #previewer th {
+    border: 2px solid #224b4b;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
